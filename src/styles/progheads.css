@@ -240,3 +240,15 @@
   .fadeOut {
     animation-name: fadeOut;
   }
+
+  @media (max-width: 768px) {
+    .footer-section {
+      padding-bottom: 3rem; /* levantamos el footer */
+    }
+
+    .corner-bottom-left,
+    .corner-bottom-right {
+      display: none;
+    }
+  }
+  

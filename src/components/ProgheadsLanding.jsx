@@ -66,7 +66,17 @@ const ProgheadsLanding = () => {
       <PlaylistCards />
       <section className="footer-section text-center">
         <p className="footer-credit text-center text-light small mt-4">
-          Un proyecto creado por Fede Barrios, bajo la sombra intensa de{' '}
+          Un proyecto creado por{' '}
+          <a
+            href="https://portfolio-fedebarriosd.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Ver portfolio"
+            style={{ all: 'unset', cursor: 'pointer' }}
+          >
+            Fede Barrios
+          </a>
+          , bajo la sombra intensa de{' '}
           <button className="hammill-button" onClick={handleClick}>
             Peter Hammill
           </button>
