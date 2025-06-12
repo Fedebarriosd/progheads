@@ -72,7 +72,7 @@ const ProgheadsLanding = () => {
             target="_blank"
             rel="noopener noreferrer"
             title="Ver portfolio"
-            style={{ all: 'unset', cursor: 'pointer' }}
+            style={{ all: 'unset'}}
           >
             Fede Barrios
           </a>

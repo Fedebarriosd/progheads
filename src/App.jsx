@@ -5,6 +5,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import ProgheadsLanding from './components/ProgheadsLanding';
+import AboutUs from './pages/AboutUs';
+import Navbar from './components/Navbar';
 
 function App() {
   useEffect(() => {
@@ -14,8 +16,10 @@ function App() {
 
   return (
     <BrowserRouter>
+      <Navbar />
       <Routes>
         <Route path="/" element={<ProgheadsLanding />} />
+        <Route path="/about_us" element={<AboutUs />} />
       </Routes>
     </BrowserRouter>
   );

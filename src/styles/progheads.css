@@ -61,15 +61,8 @@
   text-shadow: 0 0 6px #d4af37;
 }
 
-.progheads-section p,
-.progheads-section h1,
-.progheads-section h2,
-.progheads-section h3,
-.progheads-section h4,
-.progheads-section h5,
-.progheads-section h6 {
-  cursor: default;
-}
+
+
 
   
 .corner {
@@ -196,7 +189,6 @@
 .footer-ornamento:hover {
   filter: drop-shadow(0 0 8px #d4af37);
   transition: filter 0.3s ease;
-  cursor: default;
 }
 
 .hammill-button {
@@ -205,7 +197,6 @@
   color: #d4af37;
   font-style: italic;
   font-weight: bold;
-  cursor: pointer;
   text-decoration: underline;
   padding: 0;
 }
@@ -251,4 +242,54 @@
     display: none;
   }
 }
-  
+
+/* Navbar personalizado Progheads_PY */
+.navbar-custom {
+  background-color: #111c2d;       /* azul aún más oscuro */
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid #d4af37; /* línea dorada */
+  display: flex;
+  align-items: center;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.navbar-link {
+  color: #f5f5dc;                  /* texto crema claro */
+  text-decoration: none;
+  margin-right: 1.5rem;
+  font-size: 1.1rem;
+  position: relative;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #d4af37;                  /* dorado al hover */
+  text-shadow: 0 0 6px #d4af37;
+}
+
+.navbar-link.active {
+  color: #d4af37;
+}
+.navbar-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -0.25rem;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #d4af37;       /* subrayado dorado */
+}
+
+/* Móvil: centrar y apilar */
+@media (max-width: 768px) {
+  .navbar-custom {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .navbar-link {
+    margin-right: 0;
+  }
+}

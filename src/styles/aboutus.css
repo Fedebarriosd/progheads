@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap');
+
+.about-us-section {
+  background-color: #0e0e2c;
+  padding: 4rem 0;
+  font-family: 'Libre Baskerville', serif;
+  position: relative;
+}
+
+/* Ornamentos fijos pegados a los bordes del viewport */
+.ornamento-lateral.fixed-left,
+.ornamento-lateral.fixed-right {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 800px;
+  width: auto;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.9;
+}
+
+.ornamento-lateral.fixed-left {
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.ornamento-lateral.fixed-right {
+  right: 0;
+  transform: translateY(-50%) scaleX(-1);
+}
+
+/* Foto grupal */
+.group-photo {
+  max-height: 800px;
+  width: auto;
+  border: 2px solid #d4af37;
+  border-radius: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.about-us-section .display-4 {
+  color: #d4af37;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.card-gold {
+  border: 2px solid #d4af37;
+  border-radius: 0.75rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-gold:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.text-gold {
+  color: #d4af37 !important;
+}
+
+/* Modal image fix (corregido) */
+.modal-img {
+  max-width: 300px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top center;
+  border: 2px solid #d4af37;
+  border-radius: 0.5rem;
+  display: block;
+  margin: 0 auto;
+}
+
+/* 'Qué nos gusta' cards */
+.know-us-title {
+  font-size: 2.5rem;
+  color: #d4af37;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.know-us-card {
+  padding: 1rem;
+}
+
+.know-us-card .card-text strong {
+  color: #f5f5dc;
+}
+
+.know-us-card .card-text {
+  line-height: 1.4;
+}
