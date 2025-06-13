@@ -1,32 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap');
 
+html, body, #root {
+  background-color: #111c2d;
+}
+
 .about-us-section {
   background-color: #0e0e2c;
   padding: 4rem 0;
   font-family: 'Libre Baskerville', serif;
   position: relative;
+  overflow: hidden;
 }
 
-/* Ornamentos fijos pegados a los bordes del viewport */
-.ornamento-lateral.fixed-left,
-.ornamento-lateral.fixed-right {
-  position: fixed;
+.ornamento-lateral {
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  height: 800px;
+  height: 70%;       /* ocupan toda la altura de la sección */
   width: auto;
   pointer-events: none;
   z-index: 0;
   opacity: 0.9;
 }
 
-.ornamento-lateral.fixed-left {
-  left: 0;
-  transform: translateY(-50%);
+.ornamento-lateral.left {
+  left: 0px;
+  align-items: top;
 }
 
-.ornamento-lateral.fixed-right {
-  right: 0;
+.ornamento-lateral.right {
+  right: -0px;
+  align-items: top;
   transform: translateY(-50%) scaleX(-1);
 }
 
@@ -54,7 +58,9 @@
 .card-gold:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  cursor: url('../../public/cursors/cursor-hover.png') 24 24, pointer !important;
 }
+
 
 .text-gold {
   color: #d4af37 !important;
@@ -83,8 +89,12 @@
   padding: 1rem;
 }
 
+.know-us-card:hover {
+  cursor: inherit !important;
+}
+
 .know-us-card .card-text strong {
-  color: #f5f5dc;
+  color: #d4af37;
 }
 
 .know-us-card .card-text {

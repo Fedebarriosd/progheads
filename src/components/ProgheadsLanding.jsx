@@ -63,6 +63,24 @@ const ProgheadsLanding = () => {
         </div>
       </section>
 
+      <section className="follow-instagram py-5 text-center" data-aos="fade-up">
+        <div className="container">
+          <h2 className="display-5 text-gold mb-3">¡Seguinos en Instagram!</h2>
+          <p className="lead mb-4">
+            Ahí compartimos todas nuestras novedades, reseñas, noticias y memes.
+          </p>
+          <a
+            href="https://www.instagram.com/progheads_py"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-outline-gold btn-lg"
+          >
+            <FaInstagram size={24} className="me-2" />
+            @progheads_py
+          </a>
+        </div>
+      </section>
+
       <PlaylistCards />
       <section className="footer-section text-center">
         <p className="footer-credit text-center text-light small mt-4">

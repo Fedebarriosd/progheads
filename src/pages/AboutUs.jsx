@@ -11,10 +11,10 @@ const team = [
     image: "/images/Fede.jpg",
     description:
       "Soy el creador y administrador de Progheads. Estudiante de Ingeniería Informática y apasionado del progresivo más oscuro. Si te gusta la página web significa mucho para mí!",
-    favBands: ["Van der Graaf Generator", "Akercocke", "Opeth"],
+    favBands: ["Van der Graaf Generator", "Akercocke", "Voivod"],
     favAlbum: "Bath – maudlin of the Well",
     favSong: "The Manifold Curiosity – Kayo Dot",
-    favArtist: "Mikael Åkerfeldt",
+    favArtist: "Toby Driver",
     favSubgenre: "Blackened Prog",
   },
   {
@@ -34,12 +34,12 @@ const team = [
     name: "Mauri Pico",
     image: "/images/Mauri.jpg",
     description:
-      "Soy Mauri, un apasionado del rock progresivo y la música en general.",
-    favBands: ["King Crimson", "Porcupine Tree", "Dream Theater"],
-    favAlbum: "Lateralus – Tool",
-    favSong: "Schism – Tool",
-    favArtist: "Maynard James Keenan",
-    favSubgenre: "Metal Progresivo",
+      "Soy Mauri, un apasionado del rock progresivo y la música en general. De entre los 3 soy el más variado en cuanto a gustos, pero siempre llevo al prog clásico en el corazón <3.",
+    favBands: ["King Crimson", "Camel", "Tool"],
+    favAlbum: "Still Life - Opeth",
+    favSong: "Cadence and Cascade – King Crimson",
+    favArtist: "Robert Fripp",
+    favSubgenre: "Prog Rock Clásico",
   },
 ];
 
@@ -63,12 +63,12 @@ export default function AboutUs() {
       <img
         src="/images/ornamento-lateral.png"
         alt=""
-        className="ornamento-lateral fixed-left"
+        className="ornamento-lateral left d-none d-xxl-block"
       />
       <img
         src="/images/ornamento-lateral.png"
         alt=""
-        className="ornamento-lateral fixed-right mirror"
+        className="ornamento-lateral right mirror d-none d-xxl-block"
       />
 
       {/* FOTO GRUPAL */}
@@ -93,7 +93,7 @@ export default function AboutUs() {
                 bg="dark"
                 text="white"
                 className="h-100 card-gold"
-                style={{ cursor: "pointer", display: "flex", alignItems: "center" }}
+                style={{display: "flex", alignItems: "center" }}
                 onClick={() => handleShow(m)}
               >
                 <Card.Body>
