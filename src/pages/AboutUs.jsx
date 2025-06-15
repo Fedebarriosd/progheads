@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useEffect as useScrollTop } from "react"
 import { Container, Row, Col, Card, Modal, Button } from "react-bootstrap";
 import "../styles/aboutus.css";
 import AOS from "aos";
@@ -44,6 +45,10 @@ const team = [
 ];
 
 export default function AboutUs() {
+  useScrollTop(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [show, setShow] = useState(false);
   const [selected, setSelected] = useState(null);
 
