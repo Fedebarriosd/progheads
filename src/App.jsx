@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './styles/progheads.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -15,13 +15,13 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter>
+    <>
       <Navbar />
       <Routes>
         <Route path="/" element={<ProgheadsLanding />} />
         <Route path="/about_us" element={<AboutUs />} />
       </Routes>
-    </BrowserRouter>
+    </>
   );
 }
 

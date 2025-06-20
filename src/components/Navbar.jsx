@@ -1,22 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
+import { Navbar, Nav, Container } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import '../styles/navbar.css';
 
-export default function Navbar() {
+export default function AppNavbar() {
+  const [expanded, setExpanded] = useState(false);
+
   return (
-    <nav className="navbar-custom">
-      <NavLink
-        to="/"
-        className="navbar-link"
-        end
-      >
-        Inicio
-      </NavLink>
-      <NavLink
-        to="/about_us"
-        className="navbar-link"
-      >
-        Sobre nosotros
-      </NavLink>
-    </nav>
+    <Navbar
+      bg="dark"
+      variant="dark"
+      expand="lg"
+      collapseOnSelect
+      expanded={expanded}
+      onToggle={() => setExpanded(!expanded)}
+      className="navbar-custom"
+    >
+      <Container>
+        <Navbar.Brand as={NavLink} to="/">Progheads_PY</Navbar.Brand>
+
+        {/* Botón personalizado */}
+        <Navbar.Toggle aria-controls="main-navbar">
+          <div className={`hamburger ${expanded ? "open" : ""}`}>
+            <span />
+            <span />
+            <span />
+          </div>
+        </Navbar.Toggle>
+        <Navbar.Collapse id="main-navbar">
+          <Nav className="ms-auto">
+            <Nav.Link as={NavLink} to="/" end>Inicio</Nav.Link>
+            <Nav.Link as={NavLink} to="/about_us">Sobre nosotros</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }

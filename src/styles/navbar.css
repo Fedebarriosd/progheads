@@ -1,0 +1,82 @@
+/* navbar.css */
+.navbar-custom {
+  background: linear-gradient(90deg, #0e0e2c, #131327);
+  border-bottom: 2px solid #d4af37;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+  font-family: 'Libre Baskerville', serif;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* Estilo del texto de los links */
+.navbar-custom .nav-link {
+  color: #d4af37 !important;
+  margin-right: 1.5rem;
+  position: relative;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+/* Efecto on hover */
+.navbar-custom .nav-link:hover {
+  color: #fff !important;
+}
+
+/* Línea dorada animada debajo */
+.navbar-custom .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px;
+  width: 0;
+  background-color: #d4af37;
+  transition: width 0.3s ease;
+}
+
+.navbar-custom .nav-link:hover::after,
+.navbar-custom .nav-link.active::after {
+  width: 100%;
+}
+
+/* Marca principal (logo o título) */
+.navbar-custom .navbar-brand {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #f9d742 !important;
+  text-shadow: 0 0 6px rgba(255, 255, 200, 0.3);
+}
+
+/* Botón hamburguesa */
+.hamburger {
+  width: 24px;
+  height: 18px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 11;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background-color: #d4af37;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Animación: transformar en X */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
