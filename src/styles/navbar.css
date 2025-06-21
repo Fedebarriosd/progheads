@@ -42,10 +42,21 @@
 
 /* Marca principal (logo o título) */
 .navbar-custom .navbar-brand {
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: #f9d742 !important;
-  text-shadow: 0 0 6px rgba(255, 255, 200, 0.3);
+   position: relative;
+  display: inline-block;
+  font-family: 'Libre Baskerville', serif;
+  background: linear-gradient(
+    90deg,
+    #f9d742 0%,
+    #ffffff 50%,
+    #f9d742 100%
+  );
+  background-size: 200% auto;
+  background-position: -100% 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background-position 0.8s ease;
 }
 
 /* Botón hamburguesa */
@@ -88,3 +99,6 @@
   cursor: url('../../public/cursors/cursor-hover.png') 24 24, pointer !important;
 }
 
+.navbar-custom .navbar-brand:hover {
+  background-position: 0% 0;
+}

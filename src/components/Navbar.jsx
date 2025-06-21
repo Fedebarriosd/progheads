@@ -10,6 +10,7 @@ export default function AppNavbar() {
     <Navbar
       bg="dark"
       variant="dark"
+      sticky = "top"
       expand="lg"
       collapseOnSelect
       expanded={expanded}
@@ -29,8 +30,21 @@ export default function AppNavbar() {
         </Navbar.Toggle>
         <Navbar.Collapse id="main-navbar">
           <Nav className="ms-auto">
-            <Nav.Link as={NavLink} to="/" end>Inicio</Nav.Link>
-            <Nav.Link as={NavLink} to="/about_us">Sobre nosotros</Nav.Link>
+              <Nav.Link
+                as={NavLink}
+                to="/"
+                end
+                onClick={() => setExpanded(false)}
+              >
+                Inicio
+              </Nav.Link>
+              <Nav.Link
+                as={NavLink}
+                to="/about_us"
+                onClick={() => setExpanded(false)}   // y este también
+              >
+                Sobre nosotros
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
