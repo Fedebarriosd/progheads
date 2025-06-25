@@ -1,5 +1,5 @@
+// src/pages/AboutUs.jsx
 import React, { useState, useEffect } from "react";
-import { useEffect as useScrollTop } from "react"
 import { Container, Row, Col, Card, Modal, Button } from "react-bootstrap";
 import "../styles/aboutus.css";
 import AOS from "aos";
@@ -45,7 +45,8 @@ const team = [
 ];
 
 export default function AboutUs() {
-  useScrollTop(() => {
+  // Siempre al montar el componente, volvemos al top
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
@@ -63,18 +64,20 @@ export default function AboutUs() {
   };
 
   return (
-    <section className="about-us-section">
-      {/* Ornamentos fijos a los bordes del viewport */}
-      <img
-        src="/images/ornamento-lateral.png"
-        alt=""
-        className="ornamento-lateral left d-none d-xxl-block"
-      />
-      <img
-        src="/images/ornamento-lateral.png"
-        alt=""
-        className="ornamento-lateral right mirror d-none d-xxl-block"
-      />
+    <section className="about-us-section d-flex flex-column align-items-center position-relative">
+      {/* Contenedor flex de ornamentos laterales */}
+      <div className="ornamentos-wrapper d-none d-xxl-flex w-100 position-absolute top-0 justify-content-between">
+        <img
+          src="/images/ornamento-lateral.png"
+          alt=""
+          className="ornamento-lateral"
+        />
+        <img
+          src="/images/ornamento-lateral.png"
+          alt=""
+          className="ornamento-lateral mirror"
+        />
+      </div>
 
       {/* FOTO GRUPAL */}
       <Container className="text-center mb-5" data-aos="fade-down">
@@ -97,8 +100,7 @@ export default function AboutUs() {
               <Card
                 bg="dark"
                 text="white"
-                className="h-100 card-gold"
-                style={{display: "flex", alignItems: "center" }}
+                className="h-100 card-gold d-flex align-items-center"
                 onClick={() => handleShow(m)}
               >
                 <Card.Body>
@@ -134,7 +136,9 @@ export default function AboutUs() {
 
       {/* QUÉ NOS GUSTA */}
       <Container className="text-center mt-5 mb-3">
-        <h2 className="know-us-title" data-aos="fade-up">Qué nos gusta</h2>
+        <h2 className="know-us-title" data-aos="fade-up">
+          Qué nos gusta
+        </h2>
       </Container>
       <Container className="mb-5">
         <Row xs={1} md={3} className="g-4">
@@ -144,10 +148,14 @@ export default function AboutUs() {
                 <Card.Body>
                   <Card.Title className="text-gold">{m.name}</Card.Title>
                   <Card.Text as="div">
-                    <strong>Bandas favoritas:</strong> {m.favBands.join(", ")}<br />
-                    <strong>Subgénero favorito:</strong> {m.favSubgenre}<br />
-                    <strong>Álbum preferido:</strong> {m.favAlbum}<br />
-                    <strong>Canción favorita:</strong> {m.favSong}<br />
+                    <strong>Bandas favoritas:</strong> {m.favBands.join(", ")}
+                    <br />
+                    <strong>Subgénero favorito:</strong> {m.favSubgenre}
+                    <br />
+                    <strong>Álbum preferido:</strong> {m.favAlbum}
+                    <br />
+                    <strong>Canción favorita:</strong> {m.favSong}
+                    <br />
                     <strong>Artista (persona) favorito:</strong> {m.favArtist}
                   </Card.Text>
                 </Card.Body>
