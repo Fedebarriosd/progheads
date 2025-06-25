@@ -3,4 +3,35 @@
     color: #f5f5dc;
     font-family: 'Libre Baskerville', serif;
     font-size: 1rem;
+    text-align: left ;
+}
+
+/* Fondo enriquecido para BlogList y BlogDetail */
+.blog-section {
+    position: relative;
+    padding: 4rem 0;
+    min-height: 100vh;
+    background: linear-gradient(
+            135deg,
+            #131327 0%,
+            #0e0e2c 60%,
+            #0a0a1f 100%
+    );
+    overflow: hidden;
+}
+
+/* Overlay de patrón geométrico muy sutil */
+.blog-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('../../public/images/Blue-tartan.jpg') repeat;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+/* Asegura que tu contenido esté siempre por encima del overlay */
+.blog-section > .container {
+    position: relative;
+    z-index: 2;
 }
