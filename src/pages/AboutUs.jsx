@@ -98,13 +98,13 @@ export default function AboutUs() {
           {team.map((m) => (
             <Col key={m.id} data-aos="fade-up">
               <Card
-                bg="dark"
-                text="white"
-                className="h-100 card-gold d-flex align-items-center"
+                className="blog-card h-100 d-flex align-items-center"
                 onClick={() => handleShow(m)}
               >
                 <Card.Body>
-                  <Card.Title className="text-gold">{m.name}</Card.Title>
+                  <Card.Title className="card-title text-gold m-0 text-center">
+                    {m.name}
+                  </Card.Title>
                 </Card.Body>
               </Card>
             </Col>
@@ -113,11 +113,19 @@ export default function AboutUs() {
       </Container>
 
       {/* MODAL DE INFO */}
-      <Modal show={show} onHide={handleClose} centered>
-        <Modal.Header closeButton className="bg-dark text-white">
+      <Modal
+        show={show}
+        onHide={handleClose}
+        centered
+        dialogClassName="modal-gold" // para el .modal-dialog
+        contentClassName="modal-gold-content" // para el .modal-content
+        backdropClassName="modal-gold-backdrop"
+      >
+        <Modal.Header closeButton>
           <Modal.Title>{selected?.name}</Modal.Title>
         </Modal.Header>
-        <Modal.Body className="bg-dark text-white">
+
+        <Modal.Body>
           {selected?.image && (
             <img
               src={selected.image}
@@ -125,10 +133,11 @@ export default function AboutUs() {
               className="modal-img mb-3"
             />
           )}
-          <p>{selected?.description}</p>
+          <p className="mb-0">{selected?.description}</p>
         </Modal.Body>
-        <Modal.Footer className="bg-dark">
-          <Button variant="outline-light" onClick={handleClose}>
+
+        <Modal.Footer>
+          <Button variant="outline-gold" onClick={handleClose}>
             Cerrar
           </Button>
         </Modal.Footer>
@@ -144,9 +153,11 @@ export default function AboutUs() {
         <Row xs={1} md={3} className="g-4">
           {team.map((m) => (
             <Col key={m.id} data-aos="zoom-in">
-              <Card bg="dark" text="white" className="card-gold know-us-card">
+              <Card className="blog-card know-us-card">
                 <Card.Body>
-                  <Card.Title className="text-gold">{m.name}</Card.Title>
+                  <Card.Title className="card-title text-gold">
+                    {m.name}
+                  </Card.Title>
                   <Card.Text as="div">
                     <strong>Bandas favoritas:</strong> {m.favBands.join(", ")}
                     <br />

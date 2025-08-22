@@ -60,17 +60,32 @@ body,
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
-.card-gold {
-  border: 2px solid #d4af37;
-  border-radius: 0.75rem;
-  transition: transform 0.2s, box-shadow 0.2s;
+.blog-card {
+    /* mismas variables que ya tenés en blog.css; si querés, podés moverlas a un .css común */
+    --bs-card-bg: rgba(13,16,44,.92);
+    --bs-card-color: #f5f5dc;
+    --bs-card-border-color: #c5a24a;
+
+    border-radius: 14px;
+    box-shadow: 0 8px 22px rgba(0,0,0,.45);
+    transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
 }
 
-.card-gold:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-  cursor: url("../../public/cursors/cursor-hover.png") 24 24, pointer !important;
+.blog-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 26px rgba(0,0,0,.55);
+    --bs-card-border-color: #e6c76a;
 }
+
+/* tipografía interna coherente */
+.blog-card .card-title { color: #f7d778; font-weight: 700; margin-bottom: .25rem; }
+.blog-card .card-text { color: rgba(245,245,220,.92); line-height: 1.35; }
+
+/* cursor para las cards clickeables de los nombres */
+.hover-pointer { cursor: pointer; }
+
+/* “Qué nos gusta” ya tenía padding, mantenemos */
+.know-us-card { padding: 1rem; }
 
 .text-gold {
   color: #d4af37 !important;
@@ -79,16 +94,79 @@ body,
 /* ──────────────────────────────────────────────
    Modal
 ────────────────────────────────────────────── */
-.modal-img {
-  max-width: 300px;
-  width: 100%;
-  object-fit: cover;
-  object-position: top center;
-  border: 2px solid #d4af37;
-  border-radius: 0.5rem;
-  display: block;
-  margin: 0 auto;
+/* Backdrop con leve blur */
+.modal-gold-backdrop {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(2px);
 }
+
+/* Caja del modal */
+.modal-gold .modal-content,
+.modal-gold-content {
+    background: rgba(13,16,44,0.96);
+    color: #f5f5dc;
+    border: 1px solid #c5a24a;
+    border-radius: 14px;
+    box-shadow: 0 12px 32px rgba(0,0,0,.6);
+}
+
+/* Header & título */
+.modal-gold .modal-header {
+    border-bottom: 1px solid #c5a24a;
+}
+.modal-gold .modal-title {
+    color: #f7d778;
+    font-weight: 700;
+}
+
+/* Botón “X” claro */
+.modal-gold .btn-close {
+    filter: invert(90%);
+    opacity: 0.9;
+}
+.modal-gold .btn-close:hover { opacity: 1; }
+
+/* Body */
+.modal-gold .modal-body {
+    color: rgba(245,245,220,.95);
+    line-height: 1.45;
+}
+
+/* Imagen del modal (ya tenés .modal-img, enriquecemos un poco) */
+.modal-img {
+    max-width: 320px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid #c5a24a;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0,0,0,.4);
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+/* Footer */
+.modal-gold .modal-footer {
+    border-top: 1px solid #c5a24a;
+}
+
+/* Botón dorado (si aún no lo tenés global) */
+.btn-outline-gold {
+    --bs-btn-color: #f7d778;
+    --bs-btn-border-color: #f7d778;
+    --bs-btn-hover-color: #0d102c;
+    --bs-btn-hover-bg: #f7d778;
+    --bs-btn-hover-border-color: #f7d778;
+    --bs-btn-active-bg: #e6c76a;
+    --bs-btn-active-border-color: #e6c76a;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .modal-gold .modal-content { border-radius: 12px; }
+    .modal-img { max-width: 260px; }
+}
+
 
 /* ──────────────────────────────────────────────
    “Qué nos gusta”
