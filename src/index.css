@@ -21,14 +21,6 @@ html, body {
     cursor: url('../public/cursors/cursor-vinilo.ico')16 16, auto;
 }
 
-a:hover,
-button:hover {
-    cursor: url('../public/cursors/cursor-hover.png') 24 24, pointer;
-}
-
-
-
-
 #root {
     min-height: 100vh;
     background-color: #0e0e2c;

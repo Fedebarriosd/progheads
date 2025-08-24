@@ -92,13 +92,6 @@
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Fuerza el cursor custom en todos los elementos hover del navbar */
-.navbar-custom .nav-link:hover,
-.navbar-custom .navbar-brand:hover,
-.navbar-custom .navbar-toggler:hover {
-  cursor: url('../../public/cursors/cursor-hover.png') 24 24, pointer !important;
-}
-
 .navbar-custom .navbar-brand:hover {
   background-position: 0% 0;
 }
