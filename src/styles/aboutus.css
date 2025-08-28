@@ -181,9 +181,9 @@ body,
   padding: 1rem;
 }
 
-/*.know-us-card:hover {
+.know-us-card:hover {
   cursor: inherit !important;
-}*/
+}
 
 .know-us-card .card-text strong {
   color: #d4af37;
