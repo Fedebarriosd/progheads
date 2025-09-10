@@ -56,7 +56,7 @@ const ProgheadsLanding = () => {
 
       <section className="progheads-section py-5" data-aos="fade-up">
         <div className="container">
-          <h2 className="mb-4" data-aos="fade-right" data-aos-delay="100">📜 Sobre el proyecto</h2>
+          <h2 className="mb-4" data-aos="fade-right" data-aos-delay="100">Sobre el proyecto</h2>
           <p>
             Progheads_PY nace de la necesidad de tener una comunidad de jóvenes que amen el progresivo dentro del Paraguay.
           </p>
