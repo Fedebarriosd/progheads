@@ -19,4 +19,13 @@ export const posts = [
     pdfPath: "/uploads/La escena italiana.pdf",
     author: "Fede",
   },
+
+  {
+    slug: "black-metal-progresivo",
+    title: "El black metal progresivo",
+    date: "2025-09-12",
+    excerpt: "Explorando la fusión entre el black metal y el rock progresivo.",
+    pdfPath: "/uploads/El black metal progresivo.pdf",
+    author: "Fede",
+  },
 ];

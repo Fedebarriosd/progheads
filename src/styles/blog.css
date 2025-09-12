@@ -83,3 +83,28 @@
     --bs-btn-active-bg: #e6c76a;
     --bs-btn-active-border-color: #e6c76a;
 }
+
+/* Contenedor masonry */
+.masonry {
+  column-count: 3;           /* lg */
+  column-gap: 1.5rem;
+}
+
+/* Cada item debe evitar partirse entre columnas */
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 1.5rem;     /* separa verticalmente los items */
+  display: inline-block;     /* necesario para columns */
+  width: 100%;
+}
+
+/* Responsivo: 2 columnas en md, 1 en móvil */
+@media (max-width: 992px) {
+  .masonry { column-count: 2; }
+}
+@media (max-width: 576px) {
+  .masonry { column-count: 1; }
+}
+
+/* Opcional: suavizar aparición */
+.masonry .blog-card { transition: transform .18s, box-shadow .18s; }

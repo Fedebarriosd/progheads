@@ -18,7 +18,7 @@ export default function BlogDetail() {
       <Container className="my-5">
         <h1 className="display-4 text-gold mb-3">{post.title}</h1>
         <p className="text-light mb-4">
-          {new Date(post.date).toLocaleDateString()}
+          {new Date(post.date).toLocaleDateString('es-PY', { timeZone: 'UTC'})}
         </p>
 
         <object
