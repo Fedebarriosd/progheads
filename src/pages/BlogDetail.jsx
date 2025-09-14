@@ -27,7 +27,7 @@ export default function BlogDetail() {
           width="100%"
           height="800px"
         >
-          <p>
+          <p id="fallback">
             Tu navegador no soporta PDF embebido.{" "}
             <a href={post.pdfPath} target="_blank" rel="noreferrer">
               Descarga el PDF aquí.
