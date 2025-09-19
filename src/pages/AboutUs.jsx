@@ -12,7 +12,7 @@ const team = [
     image: "/images/Fede.jpg",
     description:
       "Soy el creador y administrador de Progheads. Estudiante de Ingeniería Informática y apasionado del progresivo más oscuro. Si te gusta la página web significa mucho para mí!",
-    favBands: ["Van der Graaf Generator", "Akercocke", "Voivod"],
+    favBands: ["Van der Graaf Generator", "Akercocke", "Yakuza"],
     favAlbum: "Bath – maudlin of the Well",
     favSong: "The Manifold Curiosity – Kayo Dot",
     favArtist: "Toby Driver",
