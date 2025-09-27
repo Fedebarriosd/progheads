@@ -336,7 +336,7 @@
     opacity: 0.5;  /* más sutil en móvil */
   }
 
-  .progheads-hero {
-    margin-top: 8rem; /* espacio extra arriba */
+  .progheads-hero .container {
+    margin-top: 4rem; /* espacio extra arriba */
   }
 }
