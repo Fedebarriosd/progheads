@@ -330,7 +330,7 @@
     margin-right: 0;
   }
 
-  .progheads-hero .container .h1{
-    font-size: 2.2rem; /* título más pequeño en móvil */
+  .progheads-hero .container h1{
+    font-size: 2.5rem; /* título más pequeño en móvil */
   }
 }
