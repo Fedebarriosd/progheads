@@ -331,10 +331,12 @@
   }
 
   /* Ornamentos más pequeños en móvil */
+  /*
   .corner {
-    width: 70px;   /* reducimos el ancho */
-    opacity: 0.5;  /* más sutil en móvil */
+    width: 70px;
+    opacity: 0.5;
   }
+  */
 
   .progheads-hero .container {
     margin-top: 4rem; /* espacio extra arriba */
