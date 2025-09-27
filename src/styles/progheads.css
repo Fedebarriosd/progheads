@@ -335,4 +335,8 @@
     width: 70px;   /* reducimos el ancho */
     opacity: 0.5;  /* más sutil en móvil */
   }
+
+  .progheads-hero {
+    margin-top: 8rem; /* espacio extra arriba */
+  }
 }
