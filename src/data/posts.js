@@ -1,3 +1,5 @@
+import { BiLogoCreativeCommons } from "react-icons/bi";
+
 export const posts = [
   {
     slug: "musica-y-arte",
@@ -28,4 +30,22 @@ export const posts = [
     pdfPath: "/uploads/El black metal progresivo.pdf",
     author: "Fede",
   },
+
+  {
+    slug: "mini-historia-prog-rock",
+    title: "Mini historia del rock progresivo",
+    date: "2025-09-27",
+    excerpt: "Un breve recorrido por los hitos más importantes del rock progresivo: sus inicios y bandas primigenias que sembraron la semilla de lo que luego todos conoceríamos como rock progresivo.",
+    pdfPath: "/uploads/Mini historia del prog rock.pdf",
+    author: "Fede",
+  },
+
+  {
+    slug: "invisible-trilogia",
+    title: "Invisible y su trilogía progresiva",
+    date: "2025-09-27",
+    excerpt: "Analizando la trilogía de la banda argentina Invisible.",
+    pdfPath: "/uploads/Invisible trilogia.pdf",
+    author: "Fede",
+  }
 ];
