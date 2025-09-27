@@ -330,15 +330,7 @@
     margin-right: 0;
   }
 
-  /* Ornamentos más pequeños en móvil */
-  /*
-  .corner {
-    width: 70px;
-    opacity: 0.5;
-  }
-  */
-
-  .progheads-hero .container {
-    margin-top: 4rem; /* espacio extra arriba */
+  .progheads-hero .container .h1{
+    font-size: 2.2rem; /* título más pequeño en móvil */
   }
 }
