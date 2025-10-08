@@ -41,7 +41,7 @@
     overflow: hidden;
 }
 
-/* Overlay de patrón geométrico muy sutil */
+/* Overlay de tartan */
 .blog-section::before {
     content: "";
     position: absolute;
