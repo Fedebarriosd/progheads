@@ -47,5 +47,14 @@ export const posts = [
     excerpt: "Analizando la trilogía de la banda argentina Invisible.",
     pdfPath: "/uploads/Invisible trilogia.pdf",
     author: "Fede",
+  },
+  
+  {
+    slug: "historia-y-padre-prog-metal",
+    title: "Historia y padre del prog metal",
+    date: "2025-11-27",
+    excerpt: "Un repaso por los orígenes del metal progresivo, y un análisis sobre quién merece ser considerado su padre fundacional.",
+    pdfPath: "/uploads/Origenes del prog metal y padre.pdf",
+    author: "Fede",
   }
 ];
