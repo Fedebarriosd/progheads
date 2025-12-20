@@ -56,5 +56,14 @@ export const posts = [
     excerpt: "Un repaso por los orígenes del metal progresivo, y un análisis sobre quién merece ser considerado su padre fundacional.",
     pdfPath: "/uploads/Origenes del prog metal y padre.pdf",
     author: "Fede",
+  },
+
+  {
+    slug: "como-llegue-hasta-aca",
+    title: "Cómo llegué hasta acá",
+    date: "2025-12-19",
+    excerpt: "Cómo me convertí en un apasionado del prog, desde mis primeros contactos con la música hasta hoy.",
+    pdfPath: "/uploads/Cómo llegué hasta acá.pdf",
+    author: "Fede",
   }
 ];
