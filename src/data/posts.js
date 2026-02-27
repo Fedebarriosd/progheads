@@ -1,5 +1,3 @@
-import { BiLogoCreativeCommons } from "react-icons/bi";
-
 export const posts = [
   {
     slug: "musica-y-arte",
