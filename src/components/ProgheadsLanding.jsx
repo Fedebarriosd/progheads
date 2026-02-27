@@ -86,7 +86,7 @@ const ProgheadsLanding = () => {
         <p className="footer-credit text-center text-light small mt-4">
           Un proyecto creado por{' '}
           <a
-            href="https://portfolio-fedebarriosd.vercel.app"
+            href="https://www.fedebarriosd.com"
             target="_blank"
             rel="noopener noreferrer"
             title="Ver portfolio"
