@@ -12,7 +12,7 @@ const team = [
     image: "/images/Fede.jpg",
     description:
       "Soy el creador y administrador de Progheads. Estudiante de Ingeniería Informática y apasionado del progresivo más oscuro. Si te gusta la página web significa mucho para mí!",
-    favBands: ["Van der Graaf Generator", "Akercocke", "Invisible"],
+    favBands: ["Van der Graaf Generator", "Akercocke", "Between the Buried and Me"],
     favAlbum: "Bath — maudlin of the Well",
     favSong: "The Manifold Curiosity — Kayo Dot",
     favArtist: "Toby Driver",
@@ -23,7 +23,7 @@ const team = [
     name: "Adrián Cardozo",
     image: "/images/Adrian.jpg",
     description:
-      "Hola, soy Adri. Diseñador gráfico y guitarrista en Suspiria. Los posts más lindos de Progheads son obra mía.",
+      "Hola, soy Adri. Diseñador gráfico y guitarrista en Suspiria. Me encargo de la parte visual de Progheads.",
     favBands: ["Opeth", "Gojira", "Jinjer"],
     favAlbum: "Ghost Reveries — Opeth",
     favSong: "Citizen Erased — Muse",
@@ -36,7 +36,7 @@ const team = [
     image: "/images/Mauri.jpg",
     description:
       "Soy Mauri, un apasionado del rock progresivo y la música en general. De entre los 3 soy el más variado en cuanto a gustos, pero siempre llevo al prog clásico en el corazón <3.",
-    favBands: ["King Crimson", "Camel", "Tool"],
+    favBands: ["King Crimson", "Opeth", "Comus"],
     favAlbum: "Still Life — Opeth",
     favSong: "Cadence and Cascade — King Crimson",
     favArtist: "Robert Fripp",
