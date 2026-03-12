@@ -64,4 +64,12 @@ export const posts = [
     pdfPath: "/uploads/Cómo llegué hasta acá.pdf",
     author: "Fede",
   }
+  {
+    slug: "keith-emerson-10-anos",
+    title: "Keith Emerson, a 10 años de su muerte",
+    date: "2026-03-11",
+    excerpt: "La breve historia y legado de Keith Emerson, quien fuera en vida uno de los mayores compositores del rock progresivo",
+    pdfPath: "/uploads/Keith Emerson 10 años de su muerte.pdf",
+    author: "Fede",
+  }
 ];
