@@ -63,7 +63,7 @@ export const posts = [
     excerpt: "Cómo me convertí en un apasionado del prog, desde mis primeros contactos con la música hasta hoy.",
     pdfPath: "/uploads/Cómo llegué hasta acá.pdf",
     author: "Fede",
-  }
+  },
   {
     slug: "keith-emerson-10-anos",
     title: "Keith Emerson, a 10 años de su muerte",
