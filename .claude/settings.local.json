@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd \"/home/fede/Paginas Web/progheads-py\" && npm install 2>&1)",
+      "Bash(cd \"/home/fede/Paginas Web/progheads-py\" && npm run build 2>&1)"
+    ]
+  }
+}

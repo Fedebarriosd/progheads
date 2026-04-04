@@ -173,6 +173,96 @@
 }
 
 /* =========================================================
+   LATEST POST CARD
+========================================================= */
+.latest-post-card {
+  background-color: #0e1a2b;
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  border-radius: 8px;
+  padding: 1.5rem 2rem;
+  max-width: 640px;
+  box-shadow: 0 0 20px #00000099;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Brillo superior animado */
+.latest-post-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(212, 175, 55, 0.08) 50%,
+    transparent 100%
+  );
+  animation: shimmer 4s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0%   { left: -60%; }
+  50%  { left: 120%; }
+  100% { left: 120%; }
+}
+
+.latest-post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px #d4af37aa;
+  border-color: #d4af37;
+}
+
+.latest-post-date {
+  font-size: 0.85rem;
+  color: #a0a0a0;
+  margin-bottom: 0.4rem;
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
+
+.latest-post-title {
+  font-size: 1.4rem;
+  color: #d4af37;
+  margin-bottom: 0.75rem;
+  transition: text-shadow 0.3s ease;
+}
+
+.latest-post-card:hover .latest-post-title {
+  text-shadow: 0 0 8px #d4af37aa;
+}
+
+.latest-post-excerpt {
+  color: #ccc;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+/* Badge "Nuevo" */
+.latest-post-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-family: 'Cormorant Garamond', serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #0e1a2b;
+  background-color: #d4af37;
+  padding: 0.15rem 0.6rem;
+  border-radius: 3px;
+  margin-bottom: 0.75rem;
+  animation: pulseBadge 2.5s ease-in-out infinite;
+}
+
+@keyframes pulseBadge {
+  0%, 100% { box-shadow: 0 0 0px #d4af37; }
+  50%       { box-shadow: 0 0 8px #d4af37cc; }
+}
+
+/* =========================================================
    FOOTER
 ========================================================= */
 .footer-section {
