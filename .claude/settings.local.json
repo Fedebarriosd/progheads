@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(cd \"/home/fede/Paginas Web/progheads-py\" && npm install 2>&1)",
-      "Bash(cd \"/home/fede/Paginas Web/progheads-py\" && npm run build 2>&1)"
+      "Bash(cd \"/home/fede/Paginas Web/progheads-py\" && npm run build 2>&1)",
+      "Bash(ls -lh \"/home/fede/Paginas Web/progheads-py/public/\"*.png)",
+      "Bash(identify \"/home/fede/Paginas Web/progheads-py/public/Esenciales-progrock.png\")"
     ]
   }
 }
