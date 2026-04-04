@@ -90,7 +90,7 @@ const ProgheadsLanding = () => {
       <section className="progheads-section py-5" data-aos="fade-up">
         <div className="container">
           <h2 className="mb-4 text-gold" data-aos="fade-right" data-aos-delay="100">Último artículo del blog</h2>
-          <div className="latest-post-card">
+          <div className="latest-post-card" data-aos="fade-up" data-aos-delay="100">
             <span className="latest-post-badge">Nuevo</span>
             <p className="latest-post-date">{latestPost.date}</p>
             <h3 className="latest-post-title">{latestPost.title}</h3>
