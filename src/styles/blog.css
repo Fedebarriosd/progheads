@@ -46,7 +46,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: url('../../public/images/Blue-tartan.jpg') repeat;
+    background: url('../../images/Blue-tartan.jpg') repeat;
     opacity: 0.2;
     z-index: 1;
 }

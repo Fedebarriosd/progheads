@@ -11,7 +11,7 @@ body,
    Sección principal
 ────────────────────────────────────────────── */
 .about-us-section {
-  background-image: url('../../public/images/Argyle-pattern.jpg');
+  background-image: url('../../images/Argyle-pattern.jpg');
   background-repeat: repeat;
   background-size: 600px;
   background-position: center top;

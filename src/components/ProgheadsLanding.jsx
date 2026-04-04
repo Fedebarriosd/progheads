@@ -27,10 +27,10 @@ const ProgheadsLanding = () => {
   
   return (
     <div className="progheads-bg text-light">
-    <img src="/ornamento-esquina.png" className="corner corner-top-left" alt="decoración esquina" />
-    <img src="/ornamento-esquina.png" className="corner corner-top-right" alt="decoración esquina" />
-    <img src="/ornamento-esquina.png" className="corner corner-bottom-left" alt="decoración esquina" />
-    <img src="/ornamento-esquina.png" className="corner corner-bottom-right" alt="decoración esquina" />
+    <img src="/images/ornamento-esquina.png" className="corner corner-top-left" alt="decoración esquina" />
+    <img src="/images/ornamento-esquina.png" className="corner corner-top-right" alt="decoración esquina" />
+    <img src="/images/ornamento-esquina.png" className="corner corner-bottom-left" alt="decoración esquina" />
+    <img src="/images/ornamento-esquina.png" className="corner corner-bottom-right" alt="decoración esquina" />
       <section className="progheads-hero text-center py-5">
         <div className="container">
           <h1 className="display-3 progheads-title">Progheads_PY</h1>
@@ -122,14 +122,14 @@ const ProgheadsLanding = () => {
 
         {showHammill && (
           <img
-            src="/hammill.png"
+            src="/images/hammill.png"
             alt="Peter Hammill"
             className={`hammill-img mt-3 ${isFadingOut ? 'fadeOut' : 'fadeIn'}`}
           />
         )}
 
         <img
-          src="/ornamento-footer.png"
+          src="/images/ornamento-footer.png"
           alt="ornamento-footer"
           className="footer-ornamento mt-2"
         />
