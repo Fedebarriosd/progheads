@@ -9,6 +9,7 @@ import AboutUs from "./pages/AboutUs";
 import Navbar from "./components/Navbar";
 import Bloglist from "./pages/Bloglist";
 import BlogDetail from "./pages/BlogDetail";
+import NotFound from "./pages/NotFound";
 
 function App() {
   useEffect(() => {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/about_us" element={<AboutUs />} />
         <Route path="/blog" element={<Bloglist />} />
         <Route path="/blog/:slug" element={<BlogDetail />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );
