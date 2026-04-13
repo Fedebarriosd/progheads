@@ -6,7 +6,7 @@ const playlists = [
     id: 1,
     title: 'Esenciales Prog Rock',
     cover: '/images/Esenciales-progrock.webp',
-    url: 'https://open.spotify.com/playlist/19U1kI7h1DrtXIgoMIrI8O?si=377e2ca7125945b7',
+    url: 'https://open.spotify.com/playlist/0uwCkFqV1Y4JBclgVvY7wm?si=2456fb29c3e3461e',
     description: 'Las piezas fundamentales del prog clásico: épica, poesía británica y teclados interminables.',
     alt: 'Portada de la playlist Esenciales Prog Rock'
   },
@@ -14,7 +14,7 @@ const playlists = [
     id: 2,
     title: 'Esenciales Prog Metal',
     cover: '/images/Esenciales-progmetal.webp',
-    url: 'https://open.spotify.com/playlist/4IVt1rwTIvJ63PHPD3Sm1q?si=a15d0ef1be29428b',
+    url: 'https://open.spotify.com/playlist/7EoJ9feE750MVfH5dD0y7e?si=db1fb4d345984bd8',
     description: 'Como el metal normal, pero con más culpa, tiempos raros y menos fans.',
     alt: 'Portada de la playlist Esenciales Prog Metal'
   },
@@ -22,7 +22,7 @@ const playlists = [
     id: 3,
     title: 'Gemas Ocultas Prog Rock',
     cover: '/images/Joyas-progrock.webp',
-    url: 'https://open.spotify.com/playlist/6FKuiIF9pYWcOCM7QRrJHN?si=3eb0267b7baf4e69',
+    url: 'https://open.spotify.com/playlist/5eVp0rURaECwDNbBBfSUjS?si=cf6f8621c76d43de',
     description: 'Bandas olvidadas, discos raros, joyas que nunca llegaron al mainstream… hasta ahora.',
     alt: 'Portada de la playlist Gemas Ocultas Prog Rock'
   },
@@ -30,7 +30,7 @@ const playlists = [
     id: 4,
     title: 'Gemas Ocultas Prog Metal',
     cover: '/images/Joyas-progmetal.webp',
-    url: 'https://open.spotify.com/playlist/3PuQ0wXNOML7M7AFIaXu39?si=f42ef1ff9a8e44a2',
+    url: 'https://open.spotify.com/playlist/3D46JhSnt0hO2APMTkXd0x?si=eb907ff493d94b06',
     description: 'Solos interminables, growls existenciales y estructuras que desafían toda lógica... y popularidad.',
     alt: 'Portada de la playlist Gemas Ocultas Prog Metal'
   }
