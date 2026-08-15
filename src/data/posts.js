@@ -9,7 +9,6 @@ export const posts = [
     pdfPath: "/uploads/La música no es arte.pdf",
     author: "Fede",
   },
-
   {
     slug: "escena-italiana",
     title: "La escena italiana de rock progresivo",
@@ -19,7 +18,6 @@ export const posts = [
     pdfPath: "/uploads/La escena italiana.pdf",
     author: "Fede",
   },
-
   {
     slug: "black-metal-progresivo",
     title: "El black metal progresivo",
@@ -28,16 +26,15 @@ export const posts = [
     pdfPath: "/uploads/El black metal progresivo.pdf",
     author: "Fede",
   },
-
   {
     slug: "mini-historia-prog-rock",
     title: "Mini historia del rock progresivo",
     date: "2025-09-27",
-    excerpt: "Un breve recorrido por los hitos más importantes del rock progresivo: sus inicios y bandas primigenias que sembraron la semilla de lo que luego todos conoceríamos como rock progresivo.",
+    excerpt:
+      "Un breve recorrido por los hitos más importantes del rock progresivo: sus inicios y bandas primigenias que sembraron la semilla de lo que luego todos conoceríamos como rock progresivo.",
     pdfPath: "/uploads/Mini historia del prog rock.pdf",
     author: "Fede",
   },
-
   {
     slug: "invisible-trilogia",
     title: "Invisible y su trilogía progresiva",
@@ -46,21 +43,21 @@ export const posts = [
     pdfPath: "/uploads/Invisible trilogia.pdf",
     author: "Fede",
   },
-  
   {
     slug: "historia-y-padre-prog-metal",
     title: "Historia y padre del prog metal",
     date: "2025-11-27",
-    excerpt: "Un repaso por los orígenes del metal progresivo, y un análisis sobre quién merece ser considerado su padre fundacional.",
+    excerpt:
+      "Un repaso por los orígenes del metal progresivo, y un análisis sobre quién merece ser considerado su padre fundacional.",
     pdfPath: "/uploads/Origenes del prog metal y padre.pdf",
     author: "Fede",
   },
-
   {
     slug: "como-llegue-hasta-aca",
     title: "Cómo llegué hasta acá",
     date: "2025-12-19",
-    excerpt: "Cómo me convertí en un apasionado del prog, desde mis primeros contactos con la música hasta hoy.",
+    excerpt:
+      "Cómo me convertí en un apasionado del prog, desde mis primeros contactos con la música hasta hoy.",
     pdfPath: "/uploads/Cómo llegué hasta acá.pdf",
     author: "Fede",
   },
@@ -68,8 +65,9 @@ export const posts = [
     slug: "keith-emerson-10-anos",
     title: "Keith Emerson, a 10 años de su muerte",
     date: "2026-03-11",
-    excerpt: "La breve historia y legado de Keith Emerson, quien fuera en vida uno de los mayores compositores del rock progresivo",
+    excerpt:
+      "La breve historia y legado de Keith Emerson, quien fuera en vida uno de los mayores compositores del rock progresivo",
     pdfPath: "/uploads/Keith Emerson 10 años de su muerte.pdf",
     author: "Fede",
-  }
+  },
 ];
