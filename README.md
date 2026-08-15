@@ -1,6 +1,6 @@
-# Progheads Paraguay
+# Progheads
 
-Sitio web de Progheads Paraguay, comunidad paraguaya de rock y metal progresivo. El
+Sitio web de Progheads, comunidad paraguaya de rock y metal progresivo. El
 contenido del día a día vive en [Instagram](https://www.instagram.com/progheads_py);
 este sitio es la landing, el blog y el punto de referencia en la web.
 
